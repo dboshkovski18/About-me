@@ -1,14 +1,15 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl>
+<http://njh.me/>
   a foaf:PersonalProfileDocument ;
-  foaf:maker <https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl#me> ;
-  foaf:primaryTopic <https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl#me> ;
+  foaf:maker <http://njh.me/#me> ;
+  foaf:primaryTopic <http://njh.me/#me> ;
   ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
   ns0:errorReportsTo <mailto:leigh@ldodds.com> .
 
-<https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl#me>
+<http://njh.me/#me>
   a foaf:Person ;
   foaf:name "Damjan Boshkovski" ;
   foaf:title "Mr" ;
@@ -21,17 +22,18 @@
   foaf:knows [
     a foaf:Person ;
     foaf:name "Marija" ;
-    foaf:mbox_sha1sum "a7e7c3dc1fc1f626f63d0fa633d5cb752e753cf7"
+    foaf:mbox_sha1sum "5f81c19e26fc87d0283e6b4a1d5364bfbfc79433"
   ], [
     a foaf:Person ;
-    foaf:name "Monika" ;
-    foaf:mbox_sha1sum "31614445cb87ffe277d762e87ecfc02dc6756a10"
+    foaf:name "Milos" ;
+    foaf:mbox_sha1sum "f8d35456fdf33d4956dc525e26e20b0755243021" ;
+    rdfs:seeAlso <https://mjovanovik.com/foaf.ttl>
   ], [
     a foaf:Person ;
     foaf:name "Jovan" ;
-    foaf:mbox_sha1sum "8305339697b850867ec9a1181316616df125d9f2"
+    foaf:mbox_sha1sum "137a2370e6d60af366f423434c659d434e5b71ea"
   ], [
     a foaf:Person ;
     foaf:name "Marko" ;
-    foaf:mbox_sha1sum "bb52c9eac65341c06cb8cea1374ab649d4463c59"
+    foaf:mbox_sha1sum "a3e17bdaa92a6116defebbee7b6c0cd6e554af04"
   ] .
