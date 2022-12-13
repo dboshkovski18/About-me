@@ -1,37 +1,37 @@
-<rdf:RDF
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Damjan Boshkovski</foaf:name>
-<foaf:title>Mr</foaf:title>
-<foaf:givenname>Damjan</foaf:givenname>
-<foaf:family_name>Boshkovski</foaf:family_name>
-<foaf:nick>Dame</foaf:nick>
-<foaf:mbox_sha1sum>851f6221a9916b89c829873a73874e215c9ce233</foaf:mbox_sha1sum>
-<foaf:homepage rdf:resource="https://www.facebook.com/damjan.boskovski.3"/>
-<foaf:schoolHomepage rdf:resource="https://finki.ukim.mk/"/>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Marija</foaf:name>
-<foaf:mbox_sha1sum>a7e7c3dc1fc1f626f63d0fa633d5cb752e753cf7</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Monika</foaf:name>
-<foaf:mbox_sha1sum>31614445cb87ffe277d762e87ecfc02dc6756a10</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Jovan</foaf:name>
-<foaf:mbox_sha1sum>8305339697b850867ec9a1181316616df125d9f2</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Marko</foaf:name>
-<foaf:mbox_sha1sum>bb52c9eac65341c06cb8cea1374ab649d4463c59</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
-</rdf:RDF>
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+
+<https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/dboshkovski18/About-me/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Damjan Boshkovski" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Damjan" ;
+  foaf:family_name "Boshkovski" ;
+  foaf:nick "Dame" ;
+  foaf:mbox_sha1sum "851f6221a9916b89c829873a73874e215c9ce233" ;
+  foaf:homepage <https://www.facebook.com/damjan.boskovski.3> ;
+  foaf:schoolHomepage <https://finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Marija" ;
+    foaf:mbox_sha1sum "a7e7c3dc1fc1f626f63d0fa633d5cb752e753cf7"
+  ], [
+    a foaf:Person ;
+    foaf:name "Monika" ;
+    foaf:mbox_sha1sum "31614445cb87ffe277d762e87ecfc02dc6756a10"
+  ], [
+    a foaf:Person ;
+    foaf:name "Jovan" ;
+    foaf:mbox_sha1sum "8305339697b850867ec9a1181316616df125d9f2"
+  ], [
+    a foaf:Person ;
+    foaf:name "Marko" ;
+    foaf:mbox_sha1sum "bb52c9eac65341c06cb8cea1374ab649d4463c59"
+  ] .
